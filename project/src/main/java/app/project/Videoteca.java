@@ -1,16 +1,13 @@
 /*
-
+ * @nombre: Miguel
+ * @apellidos: Gutiérrez Caso
  */
-package ed.videoteca;
+package app.project;
 
 import java.util.Arrays;
 
-/**
- *
- * @author Alvaro
- */
-public class Videoteca {
 
+public class Videoteca {
     private Pelicula[] peliculas;
     private int contadorPeliculas;
 
@@ -28,7 +25,6 @@ public class Videoteca {
         return agregar;
     }
 
-    // eliminar la película
     public Boolean eliminarPelicula(Pelicula pelicula) {
         boolean encontrado = false;
         for (int i = 0; (i < contadorPeliculas && !encontrado); i++) {
@@ -43,7 +39,6 @@ public class Videoteca {
         return encontrado;
     }
 
-    //consultar la pelicula
     public Pelicula consultarPelicula(String titulo) {
         for (int i = 0; i < contadorPeliculas; i++) {
             if (peliculas[i].getTitulo().equalsIgnoreCase(titulo)) {
@@ -100,5 +95,4 @@ public class Videoteca {
     public int getNumPeliculas() {
         return contadorPeliculas;
     }
-
 }

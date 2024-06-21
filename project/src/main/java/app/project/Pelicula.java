@@ -1,17 +1,15 @@
 /*
+ * @nombre: Miguel
+ * @apellidos: Gutiérrez Caso
  */
-package ed.videoteca;
+package app.project;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
-/**
- *
- * @author Alvaro
- */
-public class Pelicula {
 
+public class Pelicula {
     private String titulo;
     private String director;
     private LocalDate fechaLanzamiento;
@@ -43,5 +41,4 @@ public class Pelicula {
                 + ", fechaLanzamiento=" + fechaLanzamiento.format(f)
                 + '}';
     }
-
 }
